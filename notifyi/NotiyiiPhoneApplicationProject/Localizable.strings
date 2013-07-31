@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  NotiyiiPhoneApplicationProject
+
+  Created by Rapidvalue on 9/24/12.
+  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+*/
+
+"INVALID USERNAME AND PASSWORD MESSAGE" = "Invalid username or password";
+"INVALID USERNAME MESSAGE" = "Invalid username";
+"INVALID PASSWORD MESSAGE" = "Invalid password";
+"ENTER PASSWORD MESSAGE" = "Enter your password";
+"ENTER USERNAME MESSAGE" = "Enter your username";
+"ENTER USERNAME AND PASSWORD MESSAGE" = "Enter your username and password";
+"NOTIFICATION OBJECT FOR INBOX VIBRATOR" = "inboxmessageAlertEventType";
+"NOTIFICATION OBJECT FOR TOUCHBASE VIBRATOR" = "touchBaseMessageAlertEventType";
+"TOUCHBASE MESSAGE SOUND SWITCH" = "TouchBaseMessageSoundSwitchPosition";
+"INBOX MESSAGE SOUND SWITCH" = "InboxMessageSoundSwitchPosition";
+"TOUCHBASE MESSAGE VIBRATE SWITCH" = "TouchBaseMessageVibrateSwitch";
+"INBOX MESSAGE VIBRATE SWITCH" = "InboxMessageVibrateSwitch";
+"NOTIFICATION OBJECT FOR TOUCHBASE SOUND" = "touchBaseMessageSoundAlertEventType";
+"NOTIFICATION OBJECT FOR INBOX SOUND" = "inboxMessageSoundAlertEventType";
+"SUCCESSFULLY SENT" = "Your message has been sent";
+"NO SUBJECT" = "Send this message without a subject or text in the body?";
+"NO RECIPIENT" = "Please specify at least one recipient.";
+"DELETE MESSAGE FOREVER" = "Do you want to delete this message forever?";
+"TRASH MESSAGE" = "Do you want to delete this message to trash?";
+"PUSH NOTIFICATION SWITCH" = "PushNotificationSwitchpositions";
+"SESSION EXPIRY" = "Your session has expired.";
+"FORGOT PASSWORD"= "https://app.notifyi.com/Security/ForgotPassword";
+"CONTACT US"= "http://www.notifyi.com/contact-us/";
+"CHECK NETWORK CONNECTION" = "Please check your network connection";
+"NO NETWORK" = "No Network Connectivity";
+"API RESPONSE KEY VALUE" = "service response";
+"NO RESULT FOUND" = "No result found";

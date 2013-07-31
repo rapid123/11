@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D2001" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Comments" representedClassName="Comments" syncable="YES">
+        <attribute name="commentDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="commentPersonId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="commentPersonName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentsId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="commentStatus" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="discussionId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="touchBaseDiscussionID" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TouchBase" syncable="YES"/>
+    </entity>
+    <entity name="CoverageCalendar" representedClassName="CoverageCalendar" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Directory" representedClassName="Directory" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="doctorId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="doctorName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="practice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="speciality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="DiscussionParticipants" representedClassName="DiscussionParticipants" syncable="YES">
+        <attribute name="participantId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="participantName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="touchBaseParticipantsID" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TouchBase" syncable="YES"/>
+    </entity>
+    <entity name="Inbox" representedClassName="Inbox" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="messageId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="messageType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="patientDOB" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="patientFirstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="patientLastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="readStatus" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="textMessageBody" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipientmessageID" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MsgRecipient" syncable="YES"/>
+    </entity>
+    <entity name="MsgRecipient" representedClassName="MsgRecipient" syncable="YES">
+        <attribute name="docterName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isRecipient" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="messageId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="messageType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="recipientId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="inboxMessageID" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Inbox" syncable="YES"/>
+    </entity>
+    <entity name="MyProfile" representedClassName="MyProfile" syncable="YES">
+        <attribute name="contactInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hospital" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="practice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="speciality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TimeStamp" representedClassName="TimeStamp" syncable="YES">
+        <attribute name="lastUpdatedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="operationType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="TouchBase" representedClassName="TouchBase" syncable="YES">
+        <attribute name="discussionId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUpdatedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="textDiscussion" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="commentID" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Comments" syncable="YES"/>
+        <relationship name="participantsID" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="DiscussionParticipants" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Comments" positionX="160" positionY="192" width="128" height="165"/>
+        <element name="CoverageCalendar" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Directory" positionX="160" positionY="192" width="128" height="165"/>
+        <element name="DiscussionParticipants" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Inbox" positionX="160" positionY="192" width="128" height="225"/>
+        <element name="MsgRecipient" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="MyProfile" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="TimeStamp" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="TouchBase" positionX="160" positionY="192" width="128" height="135"/>
+    </elements>
+</model>
