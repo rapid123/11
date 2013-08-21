@@ -1,0 +1,77 @@
+10
+
+dir
+820
+https://subversion.assembla.com/svn/redbeacon-consumer-apps/trunk/Red%20Beacon/Classes/FB%20SSO/RBShareKit
+https://subversion.assembla.com/svn/redbeacon-consumer-apps
+
+
+
+2011-11-08T09:18:01.697757Z
+815
+nithing
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+03841f6a-7c13-4055-afe4-95a0aace1194
+
+Core
+dir
+
+Customize UI
+dir
+
+Localization
+dir
+
+SHKConfig.h
+file
+
+
+
+
+2011-11-08T08:54:55.000000Z
+cb437490188c8c510600e55779b044c1
+2011-11-08T09:18:01.697757Z
+815
+nithing
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7040
+
+Sharers
+dir
+
+UI
+dir
+

@@ -1,0 +1,49 @@
+10
+
+dir
+820
+https://subversion.assembla.com/svn/redbeacon-consumer-apps/trunk/Red%20Beacon/Classes/FB%20SSO/RBShareKit/Sharers/Services
+https://subversion.assembla.com/svn/redbeacon-consumer-apps
+
+
+
+2011-11-02T16:11:38.385396Z
+737
+nithing
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+03841f6a-7c13-4055-afe4-95a0aace1194
+
+Delicious
+dir
+
+Google Reader
+dir
+
+Instapaper
+dir
+
+Pinboard
+dir
+
+Read It Later
+dir
+
+Tumblr
+dir
+
+Twitter
+dir
+
